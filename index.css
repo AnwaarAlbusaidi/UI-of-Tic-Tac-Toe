@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}
+
+.game {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+td {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #999;
+    text-align: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+.x {
+    color: #f00;
+}
+
+.o {
+    color: #00f;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-player {
+    margin-bottom: 1rem;
+}
+
+.winner {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d00;
+}
