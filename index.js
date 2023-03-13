@@ -4,6 +4,7 @@ let currentPlayerElement = document.getElementById("current-player");
 let winnerElement = document.getElementById("winner");
 let restartButton = document.getElementById("restart-button");
 
+
 // is an array of arrays representing all possible winning combinations in the game.
 let winningCombinations = [
     [0, 1, 2],

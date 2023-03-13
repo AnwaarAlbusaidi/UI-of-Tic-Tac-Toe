@@ -1,15 +1,22 @@
+<!-- Defining the document type and basic HTML structure -->
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Setting the title of the page and linking to an external CSS file -->
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <!-- Creating a container div for centering the game board -->
     <div class="container">
+        <!-- Adding a title for the game -->
         <h1>Tic Tac Toe</h1>
+        <!-- Creating a div for the game board -->
         <div class="game">
+            <!-- Creating a table for the game board -->
             <table>
                 <tr>
+                    <!-- Adding 9 table cells (td) to represent each cell on the game board -->
                     <td id="0"></td>
                     <td id="1"></td>
                     <td id="2"></td>
@@ -25,18 +32,22 @@
                     <td id="8"></td>
                 </tr>
             </table>
+            <!-- Adding a div for displaying game information -->
             <div class="info">
+                <!-- Adding a div for displaying the current player -->
                 <div class="current-player">
                     Current player: <span id="current-player">X</span>
                 </div>
+                <!-- Adding a div for displaying the winner of the game -->
                 <div class="winner">
                     Winner: <span id="winner"></span>
                 </div>
+                <!-- Adding a restart button for starting a new game -->
                 <button id="restart-button">Restart</button>
             </div>
         </div>
     </div>
-
+    <!-- Linking to an external JavaScript file for game logic -->
     <script src="index.js"></script>
 </body>
 </html>
