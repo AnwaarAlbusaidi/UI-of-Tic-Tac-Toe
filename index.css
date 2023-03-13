@@ -1,29 +1,47 @@
-* {
+/* Universal CSS rules /
+/ Set box-sizing to border-box so padding and borders don't affect the element's total width and height /
+/ Set margin and padding to 0 for all elements */
+
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+    }
+    /* Body CSS rules /
+    / Set background color to light gray /
+    / Use Arial as the primary font family */
+    body {
     background-color: #f1f1f1;
     font-family: Arial, sans-serif;
-}
-
-.container {
+    }
+    
+    /* Container CSS rules /
+    / Use flexbox to center elements vertically and horizontally in the container /
+    / Set container height to 100% of viewport height */
+    .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-
-h1 {
+    }
+    
+    /* Heading CSS rules /
+    / Set font size to 3rem and use Courier New as the primary font family /
+    / Add a bottom margin of 1rem */
+    h1 {
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 1rem;
-}
-
-.game {
+    }
+    
+    /* Game board CSS rules /
+    / Set background color to white /
+    / Add rounded corners of 1rem /
+    / Add padding of 2rem /
+    / Add a box shadow to give depth to the board /
+    / Use flexbox to center elements vertically and horizontally in the game board */
+    .game {
     background-color: #fff;
     border-radius: 1rem;
     padding: 2rem;
@@ -32,50 +50,63 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-table {
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-}
-
-td {
+    }
+    
+    /* Game board cells CSS rules /
+    / Set border collapse to remove space between cells /
+    / Add a bottom margin of 2rem */
+    td {
     width: 5rem;
     height: 5rem;
     border: 2px solid #999;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
-}
-
-td:hover {
+    }
+    
+    /* Add a background color on hover */
+    td:hover {
     background-color: #f1f1f1;
-}
-
-.x {
+    }
+    
+    /* X and O CSS rules /
+    / Set the color to red for X and blue for O */
+    .x {
     color: #f00;
-}
-
-.o {
+    }
+    
+    .o {
     color: #00f;
-}
-
-.info {
+    }
+    
+    /* Information CSS rules /
+    / Use flexbox to center elements vertically and horizontally */
+    .info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.current-player {
+    }
+    
+    /* Current player CSS rules /
+    / Add a bottom margin of 1rem */
+    .current-player {
     margin-bottom: 1rem;
-}
-
-.winner {
+    }
+    
+    /* Winner CSS rules /
+    / Add a bottom margin of 1rem */
+    .winner {
     margin-bottom: 1rem;
-}
-
-button {
+    }
+    
+    /* Restart button CSS rules /
+    / Set background color to red and text color to white /
+    / Remove the border /
+    / Add rounded corners of 0.5rem /
+    / Add padding of 0.5rem horizontally and 1rem vertically /
+    / Change the cursor to a pointer on hover */
+    button {
     background-color: #f00;
     color: #fff;
     border: none;
@@ -83,8 +114,9 @@ button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-}
-
-button:hover {
+    }
+    
+    /* Add a darker shade of red on hover */
+    button:hover {
     background-color: #d00;
-}
+    }
